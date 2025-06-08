@@ -1,4 +1,4 @@
-module pwntwosmall
+module github.com/Xwal13/VulcanEye
 
 go 1.24.0
 
