@@ -88,11 +88,12 @@ func scanBooleanSQLi(cfg *ScanConfig, param string, baseVal string, origVal stri
 	return false
 }
 
+// XSS scan function (basic reflected XSS detection)
 func scanXSS(cfg *ScanConfig, param string, baseVal string, origVal string, baseURL string, params url.Values) int {
 	xssPayloads := []string{
-		"<script>alert('XSS')</script>",
-		"<img src=x onerror=alert('XSS')>",
-		"'><script>alert('XSS')</script>",
+		"<script>alert('xss1')</script>",
+		"\"'><img src=x onerror=alert('xss2')>",
+		"'><svg/onload=alert('xss3')>",
 	}
 	found := 0
 	for _, payload := range xssPayloads {

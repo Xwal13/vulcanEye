@@ -7,6 +7,9 @@ const (
 	ColorYellow = "\033[33m"
 	ColorCyan   = "\033[36m"
 	ColorPurple = "\033[35m"
+	ColorBlue   = "\033[94m"
+	ColorBold   = "\033[1m"
+	ColorWhite  = "\033[97m"
 )
 
 type ScanConfig struct {
