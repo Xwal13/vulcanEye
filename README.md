@@ -17,13 +17,9 @@ It automates the detection of common web application security issues—like XSS,
 - 🕵️ **Crawls** target sites to discover endpoints and forms
 - 🪝 **Auto-detects injectable parameters** in forms and URLs
 - 🍪 **Supports authenticated scans** (via cookies)
-- 📝 **Optional output to file**
-- 🐞 **Debug mode** for detailed analysis
 - 👨‍💻 **Built in Go** — runs anywhere, easy to install
 
 ## Installation
-
-With Go 1.20+:
 
 ```sh
 go install github.com/Xwal13/VulcanEye@latest
